@@ -1,10 +1,13 @@
 import './App.css';
 import ForwardedRefExample from './components/forward-ref';
+import ErrorBoundary from './ErrorBoundary';
 
 function App() {
   return (
     <div className="App">
-      <ForwardedRefExample />
+      <ErrorBoundary>
+        <ForwardedRefExample />
+      </ErrorBoundary>
     </div>
   );
 }
